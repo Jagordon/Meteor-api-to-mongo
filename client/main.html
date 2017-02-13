@@ -1,0 +1,23 @@
+<head>
+  <title>blink3</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{> wallets}}
+</body>
+
+
+
+<template name="wallets">
+  <h2>Wallets YO!</h2>
+  <table>
+  <th><td>Wallets</td><td>Balance</td></th>
+    {{#each wallets}}
+    <tr>
+      <td>{{wallet_id}}</td>
+      <td>{{balance}}</td>
+    </tr>
+    {{/each}}
+  </table>
+</template>
